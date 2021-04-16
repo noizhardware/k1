@@ -36,7 +36,7 @@ mkdir build-gcc
 cd build-gcc
 # substitute "gcc-xx.x.x" with your actual version number
 ../gcc-10.2.0/configure --target=$TARGET --prefix="$PREFIX" --disable-nls --enable-languages=c,c++ --without-headers
-make #questo l'ho aggiunto io, fa un minifail, ma è OK
+make #I added this, it might fail, it's OK if it fails
 make all-gcc
 make all-target-libgcc
 make install-gcc
