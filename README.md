@@ -1,16 +1,17 @@
+## Install and setup GCC cross-compiler
 from: https://wiki.osdev.org/GCC_Cross-Compiler
 
-- create the directory $HOME/src/
+- create the directory `$HOME/src/`
 
 - download the latest .tar.gz from:
   https://ftp.gnu.org/gnu/binutils/
-  and unzip into $HOME/src/
+  and unzip into `$HOME/src/`
 
 - download the latest .tar.gz from:
   https://ftp.gnu.org/gnu/gcc/
-  and unzip into $HOME/src/
+  and unzip into `$HOME/src/`
 
-- run xc.sh to install and setup the cross-compiler environment
+- run `xc.sh` to install and setup the cross-compiler environment
 
 - TODO:
   - try  printf 'yes yes .....' | apt install....
@@ -19,4 +20,5 @@ from: https://wiki.osdev.org/GCC_Cross-Compiler
 
 ## Kernel:
 from https://wiki.osdev.org/Bare_Bones#Building_a_Cross-Compiler
-run mak.sh, it will spit out "myKernel.bin"
+
+- run `mak.sh`, it will spit out `myKernel.bin` and also make `myKernel.iso`, ready to burn_
