@@ -10,6 +10,7 @@ sudo apt install libgmp3-dev
 sudo apt install libmpc-dev
 sudo apt install libmpfr-dev
 sudo apt install texinfo
+sudo apt install xorriso
 
 sudo apt update
 sudo apt upgrade
@@ -48,3 +49,7 @@ $HOME/opt/cross/bin/$TARGET-gcc --version
 # i686-elf-gcc (GCC) 10.2.0
 # ...blabla
 #YEAH!!
+
+#add to PATH:
+echo 'export PATH="$HOME/opt/cross/bin:$PATH"' >> $HOME/.bashrc
+source $HOME/.bashrc
